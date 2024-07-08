@@ -3,52 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Segment Tree</title>
 <style>
-  /* General Styles */
-  body {
-    background-color: white;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box; /* Include padding in width calculation */
-  }
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  h1 {
-    color: black; /* Black color for top heading */
-  }
-  p {
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 1.8;
-  }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
 </style>
+<title>Segment Tree Complexity Overview</title>
 </head>
 <body>
+    <h2>Segment Tree</h2>
 
-<div class="container">
+    <div class="description">
+        <p>A Segment Tree is a versatile data structure used for efficiently querying and updating intervals or segments of data. It can be adapted to manage subscription validity periods or access permissions for premium content efficiently.</p>
+    </div>
 
-<header>
-  <h1>Segment Tree</h1>
-</header>
+    <h3>Space Complexity</h3>
+    <p>The space complexity of a Segment Tree is <strong>O(n)</strong>, where <em>n</em> is the number of elements or intervals being managed.</p>
 
-<section id="segment-tree">
-  <p>Content related to Segment Tree goes here...</p>
-  <!-- Add more content as needed -->
-</section>
-
-</div>
-
+    <h3>Time Complexities</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Build</td>
+            <td>O(n)</td>
+            <td>Build Time for initializing the segment tree.</td>
+        </tr>
+        <tr>
+            <td>Query</td>
+            <td>O(log n)</td>
+            <td>Query Time for checking the status of a subscription or access permission.</td>
+        </tr>
+        <tr>
+            <td>Update</td>
+            <td>O(log n)</td>
+            <td>Update Time for modifying the status of a subscription (e.g., marking it as active or inactive).</td>
+        </tr>
+    </table>
 </body>
 </html>
